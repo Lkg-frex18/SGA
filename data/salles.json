@@ -1,0 +1,32 @@
+[
+  {
+    "id": "AUD-L1",
+    "designation": "Auditoire Licence 1",
+    "capacite": 200
+  },
+  {
+    "id": "AUD-L2",
+    "designation": "Auditoire Licence 2",
+    "capacite": 150
+  },
+  {
+    "id": "AUD-L3",
+    "designation": "Auditoire Licence 3",
+    "capacite": 120
+  },
+  {
+    "id": "AUD-L4",
+    "designation": "Auditoire Licence 4",
+    "capacite": 100
+  },
+  {
+    "id": "SALLE-MACH",
+    "designation": "Salle de machines",
+    "capacite": 80
+  },
+  {
+    "id": "SALLE-MGT",
+    "designation": "Salle de management",
+    "capacite": 60
+  }
+]
