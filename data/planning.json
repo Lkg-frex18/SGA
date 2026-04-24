@@ -1,0 +1,34 @@
+[
+  {
+    "jour": "Lundi",
+    "debut": "08:00",
+    "fin": "12:00",
+    "id_salle": "AUD-L1",
+    "id_cours": "INF101",
+    "id_groupe": "L1"
+  },
+  {
+    "jour": "Lundi",
+    "debut": "13:00",
+    "fin": "17:00",
+    "id_salle": "AUD-L2",
+    "id_cours": "INF201",
+    "id_groupe": "L2"
+  },
+  {
+    "jour": "Mardi",
+    "debut": "08:00",
+    "fin": "12:00",
+    "id_salle": "SALLE-MACH",
+    "id_cours": "OPT302",
+    "id_groupe": "ING_LOG"
+  },
+  {
+    "jour": "Mercredi",
+    "debut": "13:00",
+    "fin": "17:00",
+    "id_salle": "AUD-L4",
+    "id_cours": "OPT404",
+    "id_groupe": "DATA_SCI"
+  }
+]
