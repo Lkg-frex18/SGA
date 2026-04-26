@@ -1,34 +1,162 @@
 [
-  {
-    "jour": "Lundi",
-    "debut": "08:00",
-    "fin": "12:00",
-    "id_salle": "AUD-L1",
-    "id_cours": "INF101",
-    "id_groupe": "L1"
-  },
-  {
-    "jour": "Lundi",
-    "debut": "13:00",
-    "fin": "17:00",
-    "id_salle": "AUD-L2",
-    "id_cours": "INF201",
-    "id_groupe": "L2"
-  },
-  {
-    "jour": "Mardi",
-    "debut": "08:00",
-    "fin": "12:00",
-    "id_salle": "SALLE-MACH",
-    "id_cours": "OPT302",
-    "id_groupe": "ING_LOG"
-  },
-  {
-    "jour": "Mercredi",
-    "debut": "13:00",
-    "fin": "17:00",
-    "id_salle": "AUD-L4",
-    "id_cours": "OPT404",
-    "id_groupe": "DATA_SCI"
-  }
+    {
+        "jour": "Lundi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "AUD-L1",
+        "cours": "C1",
+        "groupe": "L1"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "13:00",
+        "fin": "17:00",
+        "salle": "AUD-L1",
+        "cours": "C2",
+        "groupe": "L1"
+    },
+    {
+        "jour": "Mardi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "AUD-L1",
+        "cours": "C3",
+        "groupe": "L1"
+    },
+    {
+        "jour": "Mardi",
+        "debut": "13:00",
+        "fin": "17:00",
+        "salle": "AUD-L1",
+        "cours": "C4",
+        "groupe": "L1"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "AUD-L2",
+        "cours": "C5",
+        "groupe": "L2"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "13:00",
+        "fin": "17:00",
+        "salle": "AUD-L2",
+        "cours": "C6",
+        "groupe": "L2"
+    },
+    {
+        "jour": "Mardi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "AUD-L2",
+        "cours": "C7",
+        "groupe": "L2"
+    },
+    {
+        "jour": "Mardi",
+        "debut": "13:00",
+        "fin": "17:00",
+        "salle": "AUD-L2",
+        "cours": "C8",
+        "groupe": "L2"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "AUD-L3",
+        "cours": "C9",
+        "groupe": "L3"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "13:00",
+        "fin": "17:00",
+        "salle": "AUD-L3",
+        "cours": "C10",
+        "groupe": "L3"
+    },
+    {
+        "jour": "Mardi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "AUD-L3",
+        "cours": "C11",
+        "groupe": "L3"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "AUD-L4",
+        "cours": "C12",
+        "groupe": "L4"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "13:00",
+        "fin": "17:00",
+        "salle": "AUD-L4",
+        "cours": "C13",
+        "groupe": "L4"
+    },
+    {
+        "jour": "Mardi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "AUD-L4",
+        "cours": "C14",
+        "groupe": "L4"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "SALLE-MACH",
+        "cours": "C15",
+        "groupe": "OPT1"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "13:00",
+        "fin": "17:00",
+        "salle": "SALLE-MACH",
+        "cours": "C16",
+        "groupe": "OPT1"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "SALLE-MGT",
+        "cours": "C17",
+        "groupe": "OPT2"
+    },
+    {
+        "jour": "Lundi",
+        "debut": "13:00",
+        "fin": "17:00",
+        "salle": "SALLE-MGT",
+        "cours": "C18",
+        "groupe": "OPT3"
+    },
+    {
+        "jour": "Mardi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "SALLE-MACH",
+        "cours": "C19",
+        "groupe": "OPT3"
+    },
+    {
+        "jour": "Mardi",
+        "debut": "08:00",
+        "fin": "12:00",
+        "salle": "SALLE-MGT",
+        "cours": "C20",
+        "groupe": "OPT4"
+    }
 ]

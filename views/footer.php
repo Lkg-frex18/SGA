@@ -1,19 +1,23 @@
-<style>
-    footer {
-        margin-top: 40px;
-        background-color: #6b3e26;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        font-size: 14px;
-    }
-</style>
+</div> <style>
+        footer {
+            background-color: var(--marron-sombre);
+            color: var(--marron-clair);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
 
-</div> <!-- fermeture container -->
+        footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
 
-<footer>
-    © <?= date('Y') ?> - SGA | Tous droits réservés
-</footer>
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> - Travaux Dirigés : Programmation Web PHP</p>
+        <p>Université Protestante au Congo - Faculté des Sciences Informatiques</p>
+        <p>Design Marron & Douceur par l'équipe de développement</p>
+    </footer>
 
 </body>
 </html>

@@ -1,22 +1,6 @@
 [
-  {
-    "id": "L1",
-    "libelle": "Licence 1",
-    "effectif": 180
-  },
-  {
-    "id": "L2",
-    "libelle": "Licence 2",
-    "effectif": 130
-  },
-  {
-    "id": "L3",
-    "libelle": "Licence 3",
-    "effectif": 100
-  },
-  {
-    "id": "L4",
-    "libelle": "Licence 4",
-    "effectif": 80
-  }
+  {"id":"OPT1","nom":"Data Science","promotion":"L3","effectif":60},
+  {"id":"OPT2","nom":"Securite Informatique","promotion":"L3","effectif":50},
+  {"id":"OPT3","nom":"Genie Logiciel","promotion":"L4","effectif":40},
+  {"id":"OPT4","nom":"Reseaux Avances","promotion":"L4","effectif":45}
 ]

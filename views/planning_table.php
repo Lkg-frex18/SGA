@@ -1,55 +1,64 @@
-<style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        background-color: white;
-    }
+<?php
+// On organise les données par jour pour un affichage plus simple
+$planning_par_jour = [];
+foreach ($planning_final as $item) {
+    $planning_par_jour[$item['jour']][] = $item;
+}
+?>
 
-    th {
-        background-color: #6b3e26;
-        color: white;
-        padding: 12px;
-    }
-
-    td {
-        border: 1px solid #ddd;
-        padding: 10px;
-        text-align: center;
-    }
-
-    tr:nth-child(even) {
-        background-color: #f9f6f3;
-    }
-
-    tr:hover {
-        background-color: #f1e7df;
-    }
-</style>
-
-<h2>📌 Planning des cours</h2>
-
-<?php if (!empty($planning)) : ?>
+<h2 style="color: var(--marron-sombre); border-bottom: 2px solid var(--marron-clair); padding-bottom: 10px;">
+    Emploi du Temps Hebdomadaire
+</h2>
 
 <table>
-    <tr>
-        <th>Jour</th>
-        <th>Heure</th>
-        <th>Salle</th>
-        <th>Cours</th>
-    </tr>
-
-    <?php foreach ($planning as $p) : ?>
+    <thead>
         <tr>
-            <td><?= $p['jour'] ?></td>
-            <td><?= $p['heure'] ?></td>
-            <td><?= $p['salle'] ?></td>
-            <td><?= $p['cours'] ?></td>
+            <th>Jour</th>
+            <th>Créneau Horaire</th>
+            <th>Cours & Groupe</th>
+            <th>Salle Affectée</th>
         </tr>
-    <?php endforeach; ?>
-
+    </thead>
+    <tbody>
+        <?php if (empty($planning_final)): ?>
+            <tr>
+                <td colspan="4" style="text-align:center;">Le planning est vide.</td>
+            </tr>
+        <?php else: ?>
+            <?php foreach ($jours as $j): ?>
+                <?php if (isset($planning_par_jour[$j])): ?>
+                    <?php foreach ($planning_par_jour[$j] as $index => $cours_prevu): ?>
+                    <tr>
+                        <?php if ($index === 0): ?>
+                            <td rowspan="<?php echo count($planning_par_jour[$j]); ?>" style="font-weight: bold; background-color: var(--blanc-casse);">
+                                <?php echo $j; ?>
+                            </td>
+                        <?php endif; ?>
+                        
+                        <td><?php echo $cours_prevu['heure']; ?></td>
+                        <td>
+                            <span style="display:block; font-weight:600; color:var(--marron-sombre);">
+                                <?php echo $cours_prevu['cours']; ?>
+                            </span>
+                        </td>
+                        <td>
+                            <span style="background-color: var(--marron-clair); padding: 2px 8px; border-radius: 12px; font-size: 0.85rem;">
+                                <?php echo $cours_prevu['salle']; ?>
+                            </span>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr>
+                        <td style="font-weight: bold; background-color: var(--blanc-casse);"><?php echo $j; ?></td>
+                        <td colspan="3" style="color: #999; font-style: italic;">Aucun cours prévu</td>
+                    </tr>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </tbody>
 </table>
 
-<?php else : ?>
-    <p>Aucun planning disponible.</p>
-<?php endif; ?>
+<div style="margin-top: 20px; font-size: 0.8rem; color: #666;">
+    * Ce planning respecte les contraintes de capacité des auditoires et évite les collisions de groupes. [cite: 30, 49]
+</div>

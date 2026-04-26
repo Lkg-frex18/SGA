@@ -1,7 +1,6 @@
 [
-  {"id": "SEC_INF", "libelle": "Sécurité Informatique", "promotion_parente": "L3", "effectif": 25},
-  {"id": "ING_LOG", "libelle": "Ingénierie Logiciel", "promotion_parente": "L3", "effectif": 40},
-  {"id": "ROBOT", "libelle": "Robotique", "promotion_parente": "L3", "effectif": 15},
-  {"id": "DATA_SCI", "libelle": "Data Sciences", "promotion_parente": "L4", "effectif": 20},
-  {"id": "SYS_EMB", "libelle": "Systèmes Embarqués", "promotion_parente": "L4", "effectif": 18}
+  {"id":"OPT1","nom":"Data Science","promotion":"L3","effectif":60},
+  {"id":"OPT2","nom":"Securite Informatique","promotion":"L3","effectif":50},
+  {"id":"OPT3","nom":"Genie Logiciel","promotion":"L4","effectif":40},
+  {"id":"OPT4","nom":"Reseaux Avances","promotion":"L4","effectif":45}
 ]
